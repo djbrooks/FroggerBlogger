@@ -36,11 +36,12 @@ gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #
-# djb 20180304 BootStrap 4.0.0.alpha3, friendly_id, annotate
-#gem 'bootstrap', '~> 4.0.0.alpha3'
+# djb 20180304 BootStrap 4.0.0.alpha3, friendly_id, will_paginate ~> 3.1.0
+#gem 'bootstrap', '~> 4.0.0.alpha3' 
 gem 'bootstrap', '4.0.0.alpha3'
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'annotate'
+gem 'will_paginate', '~> 3.1.0'
 
 
 group :development, :test do

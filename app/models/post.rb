@@ -22,23 +22,27 @@ class Post < ApplicationRecord
 
   belongs_to :author
 
-    scope :most_recent, ->  { order(published_at: :desc) }
-    scope :published, ->  { where(published: true) }
+  scope :most_recent, ->  { order(published_at: :desc) }
+  scope :published, ->  { where(published: true) }
 
   def should_generate_new_friendly_id?
-      title_changed?
+    title_changed?
   end
 
   def display_day_published
-      "Published #{published_at.strftime('%-b %-d, %Y')}"
+    if published_at.present?
+      "Published on #{published_at.strftime('%-b %-d, %Y')}"
+    else
+      "Not published yet."
+    end
   end
 
   def publish
-      update(published: true, published_at: Time.now)
+    update(published: true, published_at: Time.now)
   end
 
   def unpublish
-      update(published: false, published_at: nil)
+    update(published: false, published_at: nil)
   end
 
 end
