@@ -8,7 +8,10 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+ gem 'sqlite3'
+#
+# Use postgresql
+#gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -37,11 +40,12 @@ gem 'devise'
 # gem 'capistrano-rails', group: :development
 #
 # djb 20180304 BootStrap 4.0.0.alpha3, friendly_id, will_paginate ~> 3.1.0
-#gem 'bootstrap', '~> 4.0.0.alpha3' 
+# 'bootstrap', '~> 4.0.0.alpha3' 'acts-as-taggable-on', '~> 4.0'
 gem 'bootstrap', '4.0.0.alpha3'
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'annotate'
 gem 'will_paginate', '~> 3.1.0'
+gem 'acts-as-taggable-on', '~> 4.0'
 
 
 group :development, :test do

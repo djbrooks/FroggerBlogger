@@ -44,6 +44,12 @@
                     </li>
                     <li class="list-group-item">
                         <div class="field">
+                            <%= f.label 'Tags' %>
+                            <%= f.text_area :tag_list %>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="field">
                             <div class="actions">
                                 <%= f.submit  "Save blog post", class: 'btn btn-success btn-block' %>
                             </div>
