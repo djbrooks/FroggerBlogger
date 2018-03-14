@@ -19,6 +19,15 @@
             color: $primary-color-text !important;
           }
       }
+      .nav-item.author_nav {
+        border-left: 3px solid $accent-color;
+        img { height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: 1px solid $primary-color-light;
+        margin-left: 10px;
+      }
+    }
 }
 
 .collapse-bg {

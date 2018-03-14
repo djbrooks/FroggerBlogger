@@ -36,6 +36,14 @@ class Author < ApplicationRecord
     "https://www.gravatar.com/avatar/#{gravatar_hash}"
   end
 
+  def display_name
+    if name.present?
+      name
+    else
+      "Author"
+    end
+  end
+
   def gravatar_hash
     Digest::MD5.hexdigest(email.downcase)
   end
