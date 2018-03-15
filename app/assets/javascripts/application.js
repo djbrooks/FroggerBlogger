@@ -17,10 +17,13 @@
 //= require_tree .
 
 document.addEventListener("turbolinks:load", function() {
+  console.log('Before tinymce remove')
     tinymce.remove();
+  console.log('Before tinymce init')
     tinymce.init({ selector: "textarea#post_body"  // change this value according to your HTML
-        , height: '480' 
+        , height: '480'
         , plugins: "codesample image media link code textcolor"
         , toolbar: "undo redo | styleselect | bold italic link textcolor | codesample image media | code"
     });
+  console.log('After tinymce init')
 })
