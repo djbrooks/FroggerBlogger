@@ -5,15 +5,14 @@
   <!-- Basic Info section -->
   <%= form_tag authors_info_path, method: :put do %>
     <%= fields_for :author  do |f| %>
-      <div class="col-md6">
+      <div class="col-md-6">
         <div class="card">
           <div class="card-block">
             <div class="card-title">
               Basic Info
             </div>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
+          <ul class="list-group list-group-flush"> <li class="list-group-item">
               <%= image_tag(current_author.gravatar_image_url) %>
             </li>
             <li class="list-group-item">
@@ -45,7 +44,7 @@
   <!-- Change password section -->
   <%= form_tag authors_change_password_path, method: :put do %>
     <%= fields_for :author  do |f| %>
-      <div class="col-md6">
+      <div class="col-md-6">
         <div class="card">
           <div class="card-block">
             <div class="card-title">
