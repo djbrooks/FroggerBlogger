@@ -45,6 +45,15 @@ gem 'devise'
 # 'bootstrap', '~> 4.0.0.alpha3' 'acts-as-taggable-on', '~> 4.0'
 gem 'bootstrap', '4.0.0.alpha3'
 
+
+# loofa vulnerability: https://github.com/flavorjones/loofah/issues/144
+gem 'loofah', '~> 2.2.1'
+
+# In Gemfile.lock
+#    loofah (2.2.0)
+#      crass (~> 1.0.2)
+#      nokogiri (>= 1.5.9)
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
