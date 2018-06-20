@@ -18,6 +18,10 @@
         <li class="list-group-item">
           <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "nav-link" %>
         </li>
+        <% else %>
+        <li class="list-group-item">
+          <a class='nav-link' href='/authors/sign_in'>Login</a>
+        </li>
         <% end %>
       </ul>
     </div>
@@ -55,11 +59,11 @@
           <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "dropdown-item" %>
         </div>
       </li>
-    </ul>
       <% else %>
-        <a class='navbar-brand nav-item' href='/authors/sign_in'>
-          Login
-        </a>
-      <% end %>
+      <li class="nav-item">
+        <a class='navbar-brand' href='/authors/sign_in'>Login</a>
+      </li>
+    </ul>
+    <% end %>
   </div>
 </nav>
