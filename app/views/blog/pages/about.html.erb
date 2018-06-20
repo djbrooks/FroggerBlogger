@@ -2,4 +2,55 @@
 <% provide(:page_title, "About") %>
 
 <title><%= yield(:page_title) %> | FroggerBlogger</title>
-<h1>About Page</h1>
+<h1><%= yield(:page_title) %> Page</h1>
+
+<!-- Basic Info section -->
+<div class="card">
+  <div class="card-block">
+    <div class="card-title">
+      TechmakerTV Info
+    </div>
+    <p>
+      This Frogger-Blogger app was created from following the excellent 15 part
+      <a href="https://www.youtube.com/channel/UCaT8uPGUYbdRsjm4cJy1D7w/about" target="_blank">TechmakerTV</a> YouTube series written by
+      <a href="https://github.com/StephenFiser" target="_blank">Stephen Fiser</a>
+      entitled:
+    </p>
+    <p>
+      <ul class="no-bullet">
+        <a href="https://www.youtube.com/watch?v=VpNBCpAgEsY&list=PLjItgYqIzJ9XuCqSsMbolBjLPd-5pA9xj" target="_blank">How to build a blog with Rails 5 and Bootstrap 4.</a>
+      </ul>
+    </p>Other awesome tools included in FroggerBlogger:</p>
+    <ul>
+      <li><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">Bootstrap 4</a>
+      </a></li>
+      <li><a href="https://www.pexels.com/" target="_blank">
+        Pexels Free Stock Photos</a>
+      </a></li>
+      <li><a href="https://github.com/norman/friendly_id/" target="_blank">
+        Friendly_ID makes pretty urls and human friendly strings</a>
+      </a></li>
+      <li><a href="https://github.com/mislav/will_paginate" target="_blank">
+        Will_Paginate for very cool page footer navigation links</a>
+      </a></li>
+      <li><a href="https://github.com/mbleigh/acts-as-taggable-on" target="_blank">
+        ActsAsTaggableOn make sorting and tagging posts super simple
+      </a></li>
+      <li><a href="https://hipsum.co/" target="_blank">
+        Hipster sounding Lorem ipsum (dummy text) :)
+      </a></li>
+      <li><a href="https://github.com/plataformatec/devise" target="_blank">
+        Devise a flexible authentication solution
+      </a></li>
+      <li><a href="https://www.tinymce.com/" target="_blank">
+        TinyMCE a fully featured WYSIWYG editor to create posts that do it all
+      </a></li>
+      <li><a href="https://disqus.com" target="_blank">
+        Disqus is a discussion tool that makes user interactions easy and upvoting easy
+      </a></li>
+      <li><a href="https://www.materialpalette.com/blue/lime" target="_blank">
+        Material Design Palette for pleasing color combinations (in this case blue and lime)
+      </a></li>
+    </ul>
+    And I am sure others that I have forgotten...
+  </div>

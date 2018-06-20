@@ -55,7 +55,11 @@
           <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "dropdown-item" %>
         </div>
       </li>
-      <% end %>
     </ul>
+      <% else %>
+        <a class='navbar-brand nav-item' href='/authors/sign_in'>
+          Login
+        </a>
+      <% end %>
   </div>
 </nav>
