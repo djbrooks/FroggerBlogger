@@ -47,7 +47,9 @@ gem 'bootstrap', '4.0.0.alpha3'
 
 
 # loofa vulnerability: https://github.com/flavorjones/loofah/issues/144
-gem 'loofah', '~> 2.2.1'
+# Security alert to upgrade to 2.2.3
+#gem 'loofah', '~> 2.2.1'
+gem "loofah", ">= 2.2.3"
 
 # In Gemfile.lock
 #    loofah (2.2.0)
