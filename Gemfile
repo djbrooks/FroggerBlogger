@@ -26,6 +26,8 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 #
 gem "sprockets", ">= 3.7.2"
+gem "ffi", ">= 1.9.24"
+gem "rubyzip", ">= 1.2.2"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
