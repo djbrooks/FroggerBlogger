@@ -12,6 +12,8 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles, tempfiles, and swp files.
+j*
+j.*
 *.swp
 /log/*
 /tmp/*
