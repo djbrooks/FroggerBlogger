@@ -25,7 +25,12 @@ footer paginate after 3 blogs posts, else 6 looks good (two rows of three).
 rails s
 
 * Deployment instructions
-Update herokupapp "Production" server (https://frogger-blogger.herokuapp.com/)
-Commit all chgs to master on github. - Run cmd:
+git add
+git commit
+git push
+# Update herokupapp "Production" server (https://frogger-blogger.herokuapp.com/)
+Commit all chgs to master on github (see above). Then run these Heroku cmds:
+    "heroku login"
     "git push production master"
-Should automagically deploy from github to Herokuapp.com.
+Should automagically deploy from github to Herokuapp.com and restart
+the server.

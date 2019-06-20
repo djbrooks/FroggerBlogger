@@ -29,6 +29,8 @@ gem "sprockets", ">= 3.7.2"
 gem "ffi", ">= 1.9.24"
 gem "rubyzip", ">= 1.2.2"
 
+ruby '2.3.4'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
