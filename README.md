@@ -14,6 +14,8 @@ Modify app/models/post.rb file PER_PAGE = N value to how many Blog posts
 are on each page. Use PER_PAGE = 3 if you want to see the apple_pagination
 footer paginate after 3 blogs posts, else 6 looks good (two rows of three).
 
+About page looks funny (very thin card). MUST use bootstrap 4.0.0.alpha3.
+Not sure the issue, but that version solves the About page format issue.
 
 * Database creation
 
@@ -22,7 +24,11 @@ footer paginate after 3 blogs posts, else 6 looks good (two rows of three).
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)
-rails s
+
+* Test on local machine
+rails s # Start Rails server
+Start Postgres db (gui?)
+http://localhost:3000 URL to view env
 
 * Deployment instructions
 git add

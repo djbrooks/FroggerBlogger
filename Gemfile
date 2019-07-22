@@ -50,8 +50,7 @@ gem 'devise'
 # djb 20180304 BootStrap 4.0.0.alpha3, friendly_id, will_paginate ~> 3.1.0
 # 'bootstrap', '~> 4.0.0.alpha3' 'acts-as-taggable-on', '~> 4.0'
 #gem 'bootstrap', '4.0.0.alpha3'
-gem "bootstrap", ">= 4.1.2"
-
+gem "bootstrap", "4.0.0.alpha3"
 
 # loofa vulnerability: https://github.com/flavorjones/loofah/issues/144
 # Security alert to upgrade to 2.2.3
